@@ -1,0 +1,22 @@
+.botao {
+    background-color: #3CBC8D;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 2px;;
+  }
+
+  #conjunto{
+
+    margin-top: 10px;
+  }
+
+  .inps{
+        background-color: #3CBC8D;
+        color: white;
+  }

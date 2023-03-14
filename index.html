@@ -5,37 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora</title>
-    <style>body
-    {
-    
-background-color: cadetblue;
+    <style>
+        body {
 
-    }
-    
+            background-color: #7D5CBC;
+
+        }
     </style>
 </head>
 
 <body>
-    
-    <h1>Calculadora</h1>
-    <form >
-        <input id="num1" type="text"></input>
-        <input id="num2" type="text"></input>
-        <button type="button" onclick="somar()">Somar</button>
-        <input id="soma3" type="text" disabled></input>
-    </form>
 
+    <center>
+        <h1>Calculadora</h1>
+        <form">
+            <input class="inps" id="num1" type="text"></input>
+            <input class="inps" id="num2" type="text"></input>
+            <input class="inps" id="num3" type="text" disabled></input>
+            </form>
+
+            <div id="conjunto">
+                <button class="botao" type="button" onclick="operacao('+')">+</button>
+                <button class="botao" type="button" onclick="operacao('-')">-</button>
+                <button class="botao" type="button" onclick="operacao('/')">/</button>
+                <button class="botao" type="button" onclick="operacao('*')">*</button>
+            </div>
+    </center>
     <script>
-function somar(){
-var num1, num2, soma;
-num1 = parseFloat(document.getElementById("num1").value);
-num2 = parseFloat(document.getElementById("num2").value);
+        function operacao(op) {
+            var num1, num2, resultado;
+            num1 = parseFloat(document.getElementById("num1").value);
+            num2 = parseFloat(document.getElementById("num2").value);
 
-soma = num1 + num2;
+            switch (op) {
+                case '+':
+                    resultado = num1 + num2;
+                    break;
 
-document.getElementById("soma3").value = soma;
-}
+                case '-':
+                    resultado = num1 - num2;
+                    break;
+
+                case '/':
+                    resultado = num1 / num2;
+                    break;
+
+                case '*':
+                    resultado = num1 * num2;
+                    break;
+            }
+
+
+            document.getElementById("num3").value = resultado;
+        }
+
 
     </script>
 </body>
