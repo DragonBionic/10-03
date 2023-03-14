@@ -8,15 +8,16 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-right: 2px;;
-  }
+    margin-right: 2px;
+    ;
+}
 
-  #conjunto{
+#conjunto {
 
     margin-top: 10px;
-  }
+}
 
-  .inps{
-        background-color: #3CBC8D;
-        color: white;
-  }
+.inps {
+    background-color: #3CBC8D;
+    color: white;
+}
